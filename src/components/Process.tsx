@@ -81,19 +81,33 @@ export function Process() {
               {/* Pricing blocks */}
               <div className={`mt-12 space-y-4 transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
                 <div className="border border-border p-6">
-                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Старт</p>
-                  <p className="font-serif text-3xl text-sage mb-1">€15<span className="text-base text-muted-foreground">/мес</span></p>
-                  <p className="text-sm text-muted-foreground">50 текстов в месяц</p>
+                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Базовый</p>
+                  <p className="font-serif text-3xl text-sage mb-2">990 ₽<span className="text-base text-muted-foreground">/мес</span></p>
+                  <ul className="space-y-1">
+                    <li className="text-sm text-muted-foreground">До 50 генераций</li>
+                    <li className="text-sm text-muted-foreground">Посты для соцсетей</li>
+                    <li className="text-sm text-muted-foreground">Простые рекламные тексты</li>
+                  </ul>
                 </div>
                 <div className="border border-sage p-6 bg-sage/5">
-                  <p className="text-xs tracking-widest uppercase text-terracotta mb-1">Бизнес · Популярный</p>
-                  <p className="font-serif text-3xl text-sage mb-1">€30<span className="text-base text-muted-foreground">/мес</span></p>
-                  <p className="text-sm text-muted-foreground">200 текстов + контент-план</p>
+                  <p className="text-xs tracking-widest uppercase text-terracotta mb-1">Стандарт · Популярный</p>
+                  <p className="font-serif text-3xl text-sage mb-2">2 490 ₽<span className="text-base text-muted-foreground">/мес</span></p>
+                  <ul className="space-y-1">
+                    <li className="text-sm text-muted-foreground">До 200 генераций</li>
+                    <li className="text-sm text-muted-foreground">Тексты + идеи контента</li>
+                    <li className="text-sm text-muted-foreground">Ответы клиентам</li>
+                    <li className="text-sm text-muted-foreground">Контент-план</li>
+                  </ul>
                 </div>
                 <div className="border border-border p-6">
-                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Про</p>
-                  <p className="font-serif text-3xl text-sage mb-1">€50<span className="text-base text-muted-foreground">/мес</span></p>
-                  <p className="text-sm text-muted-foreground">Безлимит + дизайн + настройка</p>
+                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Премиум</p>
+                  <p className="font-serif text-3xl text-sage mb-2">4 990 ₽<span className="text-base text-muted-foreground">/мес</span></p>
+                  <ul className="space-y-1">
+                    <li className="text-sm text-muted-foreground">500+ генераций</li>
+                    <li className="text-sm text-muted-foreground">AI-ответы клиентам</li>
+                    <li className="text-sm text-muted-foreground">Генерация стратегий</li>
+                    <li className="text-sm text-muted-foreground">Приоритетная поддержка</li>
+                  </ul>
                 </div>
               </div>
             </div>
