@@ -33,7 +33,7 @@ export function Philosophy() {
           >
             <img
               src="/minimalist-japanese-interior-design-with-natural-w.jpg"
-              alt="Минималистичный интерьер с натуральным деревом"
+              alt="Контент-ассистент для бизнеса"
               className="absolute inset-0 w-full h-full object-cover"
             />
             {/* Overlay accent */}
@@ -55,10 +55,8 @@ export function Philosophy() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Искусство
-              <span className="italic"> осознанной</span>
-              <br />
-              жизни
+              Контент без
+              <span className="italic"> лишних усилий</span>
             </h2>
 
             <div
@@ -67,13 +65,10 @@ export function Philosophy() {
               }`}
             >
               <p>
-                Мы верим, что каждое пространство таит в себе потенциал для преображения. Не через добавление,
-                а через бережное вычитание — открывая то, что всегда было предначертано.
+                Мы верим, что каждый бизнес заслуживает качественного контента — независимо от бюджета и команды. Наш ИИ-ассистент берёт на себя рутину, освобождая вас для главного.
               </p>
               <p>
-                Наш подход вдохновлён японской концепцией <em className="text-foreground">ма</em> — глубокой
-                красотой пустоты — и скандинавским пониманием
-                <em className="text-foreground"> хюгге</em>, этого ощущения уютного умиротворения.
+                ContentAI понимает <em className="text-foreground">голос вашего бренда</em> и создаёт тексты, которые звучат как вы — только быстрее и стабильнее. Посты, реклама, ответы клиентам — всё в одном месте.
               </p>
             </div>
 
@@ -84,16 +79,16 @@ export function Philosophy() {
               }`}
             >
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">12</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Лет опыта</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">10x</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Быстрее</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">140+</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Проектов</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">500+</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Клиентов</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">8</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Наград</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">4</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Платформы</p>
               </div>
             </div>
           </div>

@@ -29,7 +29,6 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
     console.log(formState)
   }
 
@@ -44,22 +43,21 @@ export function Contact() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Контакты
+              Начать
             </p>
             <h2
               className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 text-balance transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Готовы начать?
+              Попробуйте бесплатно
             </h2>
             <p
               className={`text-muted-foreground leading-relaxed mb-12 max-w-md transition-all duration-1000 delay-300 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Каждое осмысленное пространство начинается с разговора. Расскажите о вашем видении,
-              и мы вместе найдём способ воплотить его в жизнь.
+              Оставьте заявку — мы дадим 7 дней бесплатного доступа и поможем настроить ассистента под ваш бизнес.
             </p>
 
             {/* Contact Info */}
@@ -70,13 +68,13 @@ export function Contact() {
             >
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Почта</p>
-                <a href="mailto:hello@example.com" className="text-foreground hover:text-sage transition-colors">
-                  hello@example.com
+                <a href="mailto:hello@contentai.io" className="text-foreground hover:text-sage transition-colors">
+                  hello@contentai.io
                 </a>
               </div>
               <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Локация</p>
-                <p className="text-foreground">Москва и Санкт-Петербург</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Работаем для</p>
+                <p className="text-foreground">Instagram · TikTok · Сайты · Мессенджеры</p>
               </div>
             </div>
           </div>
@@ -118,7 +116,7 @@ export function Contact() {
               </div>
               <div>
                 <label htmlFor="message" className="block text-xs tracking-widest uppercase text-muted-foreground mb-3">
-                  Сообщение
+                  Расскажите о вашем бизнесе
                 </label>
                 <textarea
                   id="message"
@@ -126,7 +124,7 @@ export function Contact() {
                   onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                   rows={4}
                   className="w-full bg-transparent border-b border-border py-3 text-foreground placeholder:text-muted-foreground/50 focus:border-sage focus:outline-none transition-colors resize-none"
-                  placeholder="Расскажите о вашем проекте..."
+                  placeholder="Чем занимаетесь, для каких платформ нужен контент..."
                   required
                 />
               </div>
@@ -134,7 +132,7 @@ export function Contact() {
                 type="submit"
                 className="group inline-flex items-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500"
               >
-                Отправить
+                Получить доступ
                 <svg
                   className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1"
                   fill="none"

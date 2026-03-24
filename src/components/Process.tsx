@@ -3,27 +3,27 @@ import { useEffect, useRef, useState } from "react"
 const steps = [
   {
     number: "01",
-    title: "Слушаем",
+    title: "Старт",
     description:
-      "Мы начинаем с присутствия. Понимаем не только ваше пространство, но и то, как вы в нём живёте — ваши ритмы, потребности, стремления.",
+      "Расскажите о вашем бизнесе: ниша, аудитория, тон общения. Ассистент запомнит голос вашего бренда раз и навсегда.",
   },
   {
     number: "02",
-    title: "Видим",
+    title: "Генерация",
     description:
-      "Вместе исследуем возможности. Мудборды, образцы материалов и пространственные концепции рождаются из нашего диалога.",
+      "Выберите формат — пост, реклама, ответ клиенту или идея акции. ИИ создаст несколько вариантов за секунды.",
   },
   {
     number: "03",
-    title: "Создаём",
+    title: "Правки",
     description:
-      "С намерением и заботой воплощаем видение в жизнь. Каждая деталь продумана, каждый элемент осмыслен.",
+      "Выберите лучший вариант и при необходимости скорректируйте его. Ассистент учится на ваших предпочтениях с каждым использованием.",
   },
   {
     number: "04",
-    title: "Живём",
+    title: "Публикация",
     description:
-      "Пространство готово, но путешествие продолжается. Мы следим, чтобы ваш дом развивался вместе с вами.",
+      "Копируйте готовый текст прямо в соцсеть или мессенджер. Сохраняйте контент в библиотеку для повторного использования.",
   },
 ]
 
@@ -60,24 +60,42 @@ export function Process() {
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                 }`}
               >
-                Наш процесс
+                Тарифы
               </p>
               <h2
                 className={`font-serif text-4xl md:text-5xl font-light text-foreground mb-6 text-balance transition-all duration-1000 delay-200 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Путь
-                <span className="italic"> осознанности</span>
+                Как это
+                <span className="italic"> работает</span>
               </h2>
               <p
                 className={`text-muted-foreground leading-relaxed transition-all duration-1000 delay-300 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Настоящие пространства не создаются в спешке. Они раскрываются через вдумчивый процесс,
-                уважающий и архитектуру, и людей, которые будут здесь жить.
+                Четыре простых шага — и качественный контент готов. Без найма копирайтеров, без долгих согласований.
               </p>
+
+              {/* Pricing blocks */}
+              <div className={`mt-12 space-y-4 transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+                <div className="border border-border p-6">
+                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Старт</p>
+                  <p className="font-serif text-3xl text-sage mb-1">€15<span className="text-base text-muted-foreground">/мес</span></p>
+                  <p className="text-sm text-muted-foreground">50 текстов в месяц</p>
+                </div>
+                <div className="border border-sage p-6 bg-sage/5">
+                  <p className="text-xs tracking-widest uppercase text-terracotta mb-1">Бизнес · Популярный</p>
+                  <p className="font-serif text-3xl text-sage mb-1">€30<span className="text-base text-muted-foreground">/мес</span></p>
+                  <p className="text-sm text-muted-foreground">200 текстов + контент-план</p>
+                </div>
+                <div className="border border-border p-6">
+                  <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Про</p>
+                  <p className="font-serif text-3xl text-sage mb-1">€50<span className="text-base text-muted-foreground">/мес</span></p>
+                  <p className="text-sm text-muted-foreground">Безлимит + дизайн + настройка</p>
+                </div>
+              </div>
             </div>
           </div>
 
